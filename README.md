@@ -61,9 +61,9 @@ QuanCryptFL supports a variety of arguments for customizing the FL setup, traini
 ## Usage
 To run the Vanilla FL script with the desired configurations, use the following command format:
 ```bash
-python VanillaFL.py --model_name ResNet18 --dataset CIFAR10 --n_clients 10 --n_local_epochs 1 --num_rounds 300 --batch_size 64 --learning_rate 0.001 --partition IID --lambda_param 0.1 --reconfig_freq 50 --patience 5 --perform_attack True
+python Vanilla-FL.py --model_name ResNet18 --dataset CIFAR10 --n_clients 10 --n_local_epochs 1 --num_rounds 300 --batch_size 64 --learning_rate 0.001 --partition IID --lambda_param 0.1 --reconfig_freq 50 --patience 5 --perform_attack True
 ```
 Run the QuanCryptFL mechanism use the following script with the desired configurations:
 ```bash
-python QuanCryptFL.py --model_name ResNet18 --dataset CIFAR10 --n_clients 10 --n_local_epochs 1 --num_rounds 300 --batch_size 64 --learning_rate 0.001 --partition IID --clip_factor 0.5 --num_bits 8 --lambda_param 0.1 --reconfig_freq 50 --patience 5 --perform_attack True
+python QuanCrypt-FL.py --model_name ResNet18 --dataset CIFAR10 --n_clients 10 --n_local_epochs 1 --num_rounds 300 --batch_size 64 --learning_rate 0.001 --partition IID --clip_factor 0.5 --num_bits 8 --lambda_param 0.1 --reconfig_freq 50 --patience 5 --perform_attack True
 ```
